@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int x, y, p, c, erro; //x-coelho, y-patos, p-patos, c-cabeças
+    
+    printf("Insira a quantidade de cabeças:");
+    scanf("%d", &c);
+    printf("Insira a quantidade de patas:");
+    scanf("%d", &p);
+    
+    
+    erro = p % 2;
+    
+    if (erro>0){
+        printf("Quantidades invalidas");
+    }
+    else  {
+    x=(p-(2*c))/2;
+    y=(c-x); }
+    
+    if (x < 0){
+        printf("Quantidades invalidas");
+    }
+    
+    else if (((4*x)+(2*y))>p){
+        printf("Quantidades invalidas");
+    }
+    
+    else if (y< 0){
+        printf("Quantidades invalidas");
+    }
+        
+    else {
+    
+        printf("Existem  %d coelhos e %d patos no curral", x,y);}
+    
+
+
+
+    return 0;
+}
