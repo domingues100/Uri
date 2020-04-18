@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+    int codigo, qte;
+    float valor;
+    scanf("%d %d", &codigo, &qte);
+    
+    switch(codigo){
+        
+        case 1:
+             valor = 4.00*qte;
+        break;
+        
+        case 2:
+             valor = 4.50*qte;
+        break;
+        
+        case 3:
+             valor = 5.00*qte;
+        break;
+        
+        case 4:
+             valor = 2.00*qte;
+        break;
+        
+        case 5:
+             valor = 1.50*qte;
+        break;
+        
+    }
+    printf("Total: R$ %.2f\n", valor);
+    
+}
