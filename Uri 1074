@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, m, cont;
+    scanf("%d", &n);
+    cont=1;
+
+    if(n>0 && n<10000){
+
+      do{
+          scanf("%d", &m);
+           if(m == 0){printf("NULL\n");}
+
+            else if(m >0){
+               m = m%2;
+               if(m == 0){printf("EVEN POSITIVE\n");}
+                else{printf("ODD POSITIVE\n");}
+           }
+            else{
+               m =m%2;
+               if(m == 0){printf("EVEN NEGATIVE\n");}
+                else{printf("ODD NEGATIVE\n");}}
+        cont++;
+        }while(cont<=n);
+
+      }
+      return 0;
+}
