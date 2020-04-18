@@ -1,0 +1,32 @@
+#include <stdio.h>  
+
+int main()
+{
+    int x, y, num, n;
+    scanf("%d", &x);
+    scanf("%d", &y);
+    
+   
+    if(x<y){
+       n = x + 1;
+     do{
+      num = n % 5;
+      if( num == 2 || num == 3 ){
+          printf("%d\n", n);}
+      n++;
+    } while(y>n );}  
+    
+    
+    else{
+       n = y + 1;
+       do{
+      num = n % 5;
+      if( num == 2 || num == 3 ){
+          printf("%d\n", n);}
+      n++;
+    } while(x>n ); }  
+    
+    
+    return 0;
+    
+}
