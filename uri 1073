@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+   int n, cont, m;
+   scanf("%d", &n);
+   cont=1;
+   m = 1;
+  if(n>5 && n<2000){
+       for(cont=1 ; cont <= n; cont++){
+          m = m% 2 ;
+           if(m == 0){ printf("%d^2 = %d\n", cont, cont*cont);}
+          m++; 
+       }
+
+  }
+  
+  return 0;
+}
