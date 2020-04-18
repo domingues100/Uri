@@ -1,0 +1,19 @@
+#include <stdio.h> // leia um número e conte quantos digitos tem
+
+int main()
+{
+    int x, y;
+
+    printf("Digite um numero: ");
+    scanf("%d", &x);
+
+    y=0;
+
+    do  {
+    x = x/10;
+    y++;
+    } while (x!= 0);
+       printf("A quantidade de algarismos e %d ", y);
+
+    return 0;
+}
