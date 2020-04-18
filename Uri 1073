@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, m;
+    scanf("%d", &n);
+    
+    if(n>5 && n<2000){ 
+    do{
+     m = n*n;
+     
+     printf("%d^%d = %d\n",n,n, m);
+     n--;}while(n>5);
+    
+    }
+    
+  return 0;  
+    }
