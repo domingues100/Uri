@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+int a, b, c;
+
+  printf("Digite o valor de a:");
+  scanf("%d", &a);
+  printf("Digite o valor de b:");
+  scanf("%d", &b);
+  printf("Digite o valor de c:");
+  scanf("%d", &c);   
+  
+  if(a >= b && a >= c){
+    if(b >= c) {
+        printf("A ordem crescente é c, b, a");}
+    else {
+        printf("A ordem crescente é b, c, a");}    
+  }
+  
+  else if(b >= c && b >= a){
+    if(a >= c) {
+        printf("A ordem crescente é c, a, b");}
+    else {
+        printf("A ordem crescente é a, c, b");}    
+  }
+  
+  else {
+    if(a >= b) {
+        printf("A ordem crescente é b, a, c");}
+    else {
+        printf("A ordem crescente é a, b, c");
+    }    
+  }
+ 
+  return 0;
+}
