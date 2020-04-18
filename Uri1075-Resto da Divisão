@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+   int n,m,resto;
+   scanf("%d", &n);
+   m = 1;
+   
+   do{ 
+     resto=m%n;
+       if(resto==2){printf("%d\n",m);}
+     m++;  
+   }while(m<10000);
+   
+   return 0;
+}
