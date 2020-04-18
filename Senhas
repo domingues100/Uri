@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, m;
+    n=2002;
+    scanf("%d", &m);
+    
+    if(m==n){printf("Acesso Permitido\n");}
+    
+    
+    
+    else {
+        do{
+            printf("Senha Invalida\n");
+            scanf("%d", &m);
+        }while(m != n);}
+        
+    printf("Acesso Permitido\n");   
+        return 0;
+}
