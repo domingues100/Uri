@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, m, cont2;
+  
+    cont2 = 0;
+    
+    
+    scanf("%d", &m );  
+    
+    if(m>0){
+    printf("Feliz nat");   
+    while(cont2<m){
+    printf("a");
+    cont2++;}
+    printf("l!\n");
+    cont2 = 0;}
+    else{
+    printf("Feliz natal!\n");
+    }
+        
+    
+    return 0;
+}
