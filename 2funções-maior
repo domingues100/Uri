@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int soma(int a, int b);
+
+int main(){
+ int maior, a, b;
+ printf("informe os valores: ");
+ scanf("%d %d", &a, &b );
+ maior = soma(a,b); //chamada
+ printf("O maior e: %d\n", maior);
+
+return 0;
+}
+
+int soma(int a, int b){
+ int maior;
+ if(a>b){ 
+    maior = a;;
+ }
+ else{
+     maior = b;
+     }
+
+return maior;
+}
