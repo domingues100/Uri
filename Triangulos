@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Digite o lado a do triangulo:");
+    scanf("%d", &a);
+    printf("Digite o lado b do triangulo:");
+    scanf("%d", &b);
+    printf("Digite o lado c do triangulo:");
+    scanf("%d", &c);
+    
+    if(a==b & a==c & b==c)
+    printf("O triangulo é equilatero\n");
+    
+    if(a!=b & a!=c & b!=c)
+    printf("O triangulo é escaleno\n");
+    
+    if(a==b || a==c || b==c)
+    printf("O triangulo é isoceles\n");
+    
+    if(a*a==(b*b+c*c)||b*b==(a*a+c*c) || c*c==(a*a+b*b))
+    printf("O triangulo e retangulo");
+    
+    
+    
+    return 0;
+    } 
