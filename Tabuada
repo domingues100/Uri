@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+    int n, m, valor;
+    scanf("%d", &n);
+
+    m = 1;
+
+    do {
+         valor = m*n;
+
+         printf("%d x %d = %d\n", m, n, valor);
+         m++;
+    }while( m<=10 );
+
+ return 0;
+
+}
