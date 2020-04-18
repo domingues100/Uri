@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, contador;
+    float num1, num2, num3,m;
+    scanf("%d", &n);
+    contador = 0;
+    do{
+      scanf("%f %f %f", &num1, &num2, &num3);
+      m = (((num1*2)+(num2*3)+(num3*5)))/10;
+      contador++;
+      printf("%.1f\n", m);
+    }while(contador<=n);
+      
+ return 0;     
+}
